@@ -1,0 +1,57 @@
+.container-fluid{
+
+    background-color: #000000;
+    color: white;
+}
+.sidebar{
+    background-color: #ddd;
+  }
+  .sidebar ul {
+      list-style-type: none;
+      padding: 10%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #2a2929;
+    }
+    
+    .sidebar li {
+      margin-bottom: 10px;
+
+    }
+    
+    .sidebar a {
+      text-decoration: none;
+      display: block;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding: 15px;
+      color: white;
+      background-color:rgb(74, 153, 196);
+      
+    }
+    
+    .sidebar a:hover {
+      background-color:rgb(4, 73, 133);
+    }
+    main {
+        display: flex;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position:relative;
+        padding-bottom: 40px;
+      }
+      
+      @media (max-width: 850px) {
+        .container-fluid
+        {
+          background-color: #280208;
+          color: white;
+        }
+        
+    
+      
+    }
+    
+    
+      

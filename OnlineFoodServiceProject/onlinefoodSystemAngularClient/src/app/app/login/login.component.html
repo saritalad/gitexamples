@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="main">      
+    <div class="login">
+      <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+        <label for="chk" aria-hidden="true"><h3>Login</h3></label>
+        
+        <input type="email" name="email" ngModel #email="ngModel" placeholder="Email" required minlength="3" maxlength="20">
+        <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+          <p *ngIf="email.errors?.['required']">Email is required</p>
+          <p *ngIf="email.errors?.['minlength']">Minimum length should be 3</p>
+        </div>
+        
+        <input type="password" name="password" ngModel #password="ngModel" placeholder="Password" required minlength="3" maxlength="12">
+        <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+          <p *ngIf="password.errors?.['required']">Password is required</p>
+          <p *ngIf="password.errors?.['minlength']">Minimum length should be 3</p>
+        </div>
+        
+        <i class="toggle-password fas fa-eye" (click)="togglePasswordVisibility()"></i>
+        <button type="submit" [disabled]="loginForm.invalid">Sign In</button>
+        <div>New User? <br>Try Registering first <a href="regist">Register</a></div>
+      </form><br>
+    </div>      
+  </div>
+</div>

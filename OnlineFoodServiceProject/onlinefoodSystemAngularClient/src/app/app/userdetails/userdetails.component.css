@@ -1,0 +1,74 @@
+.container {
+  margin: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #12065e; /* Change text color to white */
+  background-color:  #ddd;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #676464; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #000000; /* Darken header background color */
+  color: #fff; /* Set header text color to white */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #5f6063; /* Darken even rows background color */
+}
+
+.data-table tbody tr:hover {
+  background-color: #7f7a7a; /* Darken hover effect color */
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive::-webkit-scrollbar {
+  width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+.danger {
+  background-color: #f44336;
+  position: relative;
+  left: 40%;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+ .danger:hover {background: #da190b;}

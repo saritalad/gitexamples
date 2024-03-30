@@ -1,0 +1,62 @@
+<!-- <div class="container">
+  <h3>Menu List</h3>
+  <div class="card-container">
+    <div class="card" *ngFor="let m of menuItems">
+      <div class="card-image">
+        <img [src]="m.mImage" [alt]="m.menuName">
+      </div>
+      <div class="card-content">
+        <h4>{{ m.menuName }}</h4>
+        <p>Price: {{ m.price }} </p>
+        <button type="button" class="btn btn-success" (click)="OnClick(m)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<h4 class="bodyhead">Our Menu</h4>
+<h4></h4>
+ 
+ 
+ <div class="card-container">
+ 
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="menuItems[0].mImage" width="200px" height="100px"><br>{{menuItems[0].menuName}}<br> ${{menuItems[0].price}}</p>
+        <button type="button" (click)="OnClick(menuItems[0])"  class="btn btn-success">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="menuItems[1].mImage" width="200px" height="100px"><br>{{menuItems[1].menuName}}<br> ${{menuItems[1].price}}</p>
+        <button type="button" (click)="OnClick(menuItems[1])"  class="btn btn-success">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="menuItems[2].mImage" width="200px" height="100px"><br>{{menuItems[2].menuName}}<br> ${{menuItems[2].price}}</p>
+        <button type="button" (click)="OnClick(menuItems[2])"  class="btn btn-success">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="menuItems[3].mImage" width="200px" height="100px"><br>{{menuItems[3].menuName}}<br> ${{menuItems[3].price}}</p>
+        <button type="button" (click)="OnClick(menuItems[3])"  class="btn btn-success">Add To Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="menuItems[4].mImage" width="200px" height="100px"><br> {{menuItems[4].menuName}}<br>${{menuItems[4].price}}</p>
+        <button type="button" (click)="OnClick(menuItems[4])"  class="btn btn-success">Add To Cart</button>
+      </div>
+    </div>
+
+ </div>
+
+
+

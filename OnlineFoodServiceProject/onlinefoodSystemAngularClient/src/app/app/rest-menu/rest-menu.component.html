@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div></div>
+    <h3>Restaurant's Menu</h3>
+    <div class="card-container">
+      <div class="card" *ngFor="let r of restMenus">
+        <div class="card-content">
+          <p><strong>Restaurant Id:</strong> {{ r.restaurantId }}</p>
+          <p><strong>Restaurant Name:</strong> {{ r.rName }}</p>
+          <p><strong>Menu Id:</strong> {{ r.menuItemId }}</p>
+          <p><strong>Item Name:</strong> {{ r.menuName }}</p>
+          <p><strong>Price:</strong> {{ r.price }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+  <button class="danger" (click)="downloadExcel()">Download Excel </button>
+</div>
+  

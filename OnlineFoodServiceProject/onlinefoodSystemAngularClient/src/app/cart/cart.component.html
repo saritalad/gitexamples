@@ -1,0 +1,40 @@
+<div class="container">
+    <h3>Cart</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+            <th>Id</th>
+          <th>Item</th>
+          <th>Item Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of cartItems; let i = index">
+            <td>{{c.cartId}}</td>
+          <td><img src="{{ c.mImage }}"></td>
+          <td>{{ c.menuName }}</td>
+          <td>{{ c.price }}</td>
+          <td>
+            <div class="quantity-controls">
+              <button type="button" (click)="decreaseQuantity(i)" class="quantity-button">-</button>
+              <span>{{ c.quantity }}</span>
+              <button type="button" (click)="increaseQuantity(i)" class="quantity-button">+</button>
+            </div>
+            
+          </td>
+          <td><button type="button" (click)="removeItem(c.cartId)" class="remove-button">Remove</button></td>
+        </tr>
+        
+          <td colspan="3" style="text-align: right;">Total:</td>
+          <td>{{ calculateTotalPrice() }}</td>
+          <td><button type="button" (click)="goToPayment(cartItems)" class="payment-button">Proceed to Payment</button></td>
+       
+
+        
+      </tbody>
+    </table>
+  </div>
+  

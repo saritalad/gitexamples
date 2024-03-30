@@ -1,0 +1,29 @@
+.body{
+  text-align: center;
+font-family:"Brush Script MT", cursive;
+/* Custom font */
+color: #ba0707;
+}
+.bodyhead{
+  text-align: center;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.body {
+  text-align: center;
+}
+
+.bodyhead {
+  font-family: "Brush Script Std", "Brush Script MT Italic", cursive;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 18rem;
+  margin: 0 10px;
+}

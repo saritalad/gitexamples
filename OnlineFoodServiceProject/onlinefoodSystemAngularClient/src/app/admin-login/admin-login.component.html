@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="main">      
+    <div class="login">
+      <form #loginForm="ngForm" >
+        <label for="chk" aria-hidden="true"><h3>Admin Login</h3></label>
+        
+        <input type="text" name="email" ngModel #email="ngModel" placeholder="Email" required minlength="3">
+        <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+          <p *ngIf="email.errors?.['required']">Email is required</p>
+          <p *ngIf="email.errors?.['minlength']">Minimum length should be 3</p>
+        </div>
+        
+        <input type="{{ passwordFieldType }}" name="password" ngModel #password="ngModel" placeholder="Password" required minlength="3">
+        <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+          <p *ngIf="password.errors?.['required']">Password is required</p>
+          <p *ngIf="password.errors?.['minlength']">Minimum length should be 3</p>
+        </div>
+        
+        <i class="toggle-password fas fa-eye" (click)="togglePasswordVisibility()"></i>
+        <button type="button" (click)="onLogin(loginForm)">Sign In</button>
+      </form><br>
+    </div>
+  </div>
+</div>

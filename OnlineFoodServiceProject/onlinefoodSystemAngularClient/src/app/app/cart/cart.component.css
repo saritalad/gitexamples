@@ -1,0 +1,82 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .data-table th, .data-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .data-table td {
+    text-align: center;
+  }
+  
+  .data-table img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-button {
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quantity-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quantity-controls span {
+    margin: 0 10px;
+  }
+
+  .payment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-button:hover {
+    background-color: #45a049;
+  }
+  
+  

@@ -1,0 +1,48 @@
+.container {
+  margin: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #100f0f; /* Set text color to white */
+  background-color: rgb(207, 207, 206);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #858889; /* Set card background color to dark */
+  color: #fff; /* Set text color to white */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card p strong {
+  color: #f7f6f3; /* Set strong text color to gold */
+}
+
+.danger {
+  background-color: #f44336;
+  position: relative;
+  left: 40%;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+ .danger:hover {background: #da190b;}

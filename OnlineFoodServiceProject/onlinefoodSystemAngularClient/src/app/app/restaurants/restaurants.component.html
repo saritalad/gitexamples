@@ -1,0 +1,79 @@
+
+<!-- <div class="container">
+ 
+
+  <marquee  behavior="scroll" direction="left">         
+    <h3>Restaurants</h3>
+  </marquee>
+  <div class="card-container">
+    <div class="card" *ngFor="let r of rest">
+      <div class="card-content">
+        <h4>{{ r.rName }}</h4>
+        <p><strong>RestaurantId:</strong> {{ r.restaurantId }}  </p>
+        <p> <img src="{{r.image}}" alt="VeerJi" width="250px" height="200px" ></p>
+          <div class="card">
+            <div class="card-content">
+              <a routerLink="/menuItems/{{r.restaurantId}}" class="button"> View Menu Items</a>
+            </div>
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+<marquee  behavior="scroll" direction="left">         
+  <h3>Restaurants</h3>
+</marquee>
+  
+<div class="card-container">
+ 
+  <div class="card">
+    <div class="card-body">
+      <p class="card-text"><img [src]="rest[0].image" width="200px" height="100px"><br>{{rest[0].restaurantId}}<br>{{rest[0].rName}}<br> {{rest[0].location}}</p>
+      <a routerLink="/menuItems/{{rest[0].restaurantId}}" class="button"> View Menu Items</a>
+    </div>
+  </div>
+
+  <div class="card-container">
+ 
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text"><img [src]="rest[1].image" width="200px" height="100px"><br>{{rest[1].restaurantId}}<br>{{rest[1].rName}}<br> {{rest[1].location}}</p>
+        <a routerLink="/menuItems/{{rest[1].restaurantId}}" class="button"> View Menu Items</a>
+      </div>
+    </div>
+
+    <div class="card-container">
+ 
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text"><img [src]="rest[2].image" width="200px" height="100px"><br>{{rest[2].restaurantId}}<br>{{rest[2].rName}}<br> {{rest[2].location}}</p>
+          <a routerLink="/menuItems/{{rest[2].restaurantId}}" class="button"> View Menu Items</a>
+        </div>
+      </div>
+
+      <div class="card-container">
+ 
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text"><img [src]="rest[3].image" width="200px" height="100px"><br>{{rest[3].restaurantId}}<br>{{rest[3].rName}}<br> {{rest[3].location}}</p>
+            <a routerLink="/menuItems/{{rest[3].restaurantId}}" class="button"> View Menu Items</a>
+          </div>
+        </div>
+
+        <div class="card-container">
+ 
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text"><img [src]="rest[4].image" width="200px" height="100px"><br>{{rest[4].restaurantId}}<br>{{rest[4].rName}}<br> {{rest[4].location}}</p>
+              <a routerLink="/menuItems/{{rest[4].restaurantId}}" class="button"> View Menu Items</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
